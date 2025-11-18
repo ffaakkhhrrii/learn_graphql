@@ -10,7 +10,8 @@
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "nuwave/lighthouse": "^6.63",
-        "psr/event-dispatcher": "^1.0"
+        "psr/event-dispatcher": "^1.0",
+        "tymon/jwt-auth": "^2.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
