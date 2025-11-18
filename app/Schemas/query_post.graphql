@@ -1,0 +1,11 @@
+GetAllPosts(
+    orderBy: _ @orderBy(columns: ["id", "title", "content"])
+): [Post] @all
+
+GetPosts(
+    orderBy: _ @orderBy(columns: ["id", "title", "content"])
+    first: Int! @rules(apply: ["max:50"])
+    page: Int
+): [Post!]! @paginate
+
+GetPost(id: ID! @eq): Post @find

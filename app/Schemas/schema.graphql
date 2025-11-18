@@ -1,0 +1,10 @@
+scalar Date @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date")
+scalar JSON @scalar(class: "MLL\\GraphQLScalars\\JSON")
+scalar Object @scalar(class: "App\\Schemas\\Scalars\\ObjectScalar")
+scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
+
+#import type_post.graphql
+
+type Query {
+    #import query_post.graphql
+}
